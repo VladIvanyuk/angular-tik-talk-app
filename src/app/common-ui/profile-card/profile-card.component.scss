@@ -1,0 +1,21 @@
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  border: 1px solid var(--light-color);
+  padding: 32px 24px;
+  border-radius: 8px;
+}
+
+.profile-card__avatar-block {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-card__info {
+  display: grid;
+  gap: 8px;
+  grid-template-rows: repeat(2, 1fr);
+}
