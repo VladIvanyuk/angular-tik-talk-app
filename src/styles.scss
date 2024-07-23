@@ -1,12 +1,26 @@
 @import url("../public/assets/css/reset.scss");
 @import url("../public/assets/css/normalize.scss");
+@import url("../public/assets/css/fonts.scss");
 
 :root {
   --dark-color: #000;
   --light-color: #fff;
+  --primary-color: #ae7aff;
 }
 
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
 }

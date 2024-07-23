@@ -19,3 +19,48 @@
   gap: 8px;
   grid-template-rows: repeat(2, 1fr);
 }
+
+.skill-tag {
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+  border: 1px solid var(--light-color);
+  border-radius: 2px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.profile-card__text {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 133%;
+}
+
+.profile-card__tags {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card__btn {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: start;
+  gap: 4px;
+}
+
+.profile-card__name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.profile-card__username {
+  font-size: 14px;
+  font-weight: 400;
+}
