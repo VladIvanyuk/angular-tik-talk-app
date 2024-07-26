@@ -14,6 +14,12 @@
   gap: 20px;
 }
 
+.profile-card__avatar {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+}
+
 .profile-card__info {
   display: grid;
   gap: 8px;
