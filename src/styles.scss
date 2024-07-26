@@ -1,18 +1,17 @@
-@import url("../public/assets/css/reset.scss");
 @import url("../public/assets/css/normalize.scss");
+@import url("../public/assets/css/reset.scss");
 @import url("../public/assets/css/fonts.scss");
+@import url("../public/assets/css/variables.scss");
 
-:root {
-  --dark-color: #000;
-  --light-color: #fff;
-  --primary-color: #ae7aff;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--dark-color);
   color: var(--light-color);
   font-family: "JetBrains Mono";
   font-weight: 500;
+  background: url(/assets/images/img-bg.png);
 }
 
 .btn {
@@ -23,4 +22,10 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 117%;
 }
