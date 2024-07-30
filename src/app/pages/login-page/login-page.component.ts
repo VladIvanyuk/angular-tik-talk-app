@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -23,6 +23,8 @@ export class LoginPageComponent {
   authService = inject(AuthService);
   router = inject(Router);
 
+  isShowPass = signal<boolean>(false);
+
   form = new FormGroup({
     username: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required),
@@ -34,5 +36,9 @@ export class LoginPageComponent {
         this.router.navigate(['']);
       });
     }
+  }
+
+  toggleShowPass() {
+    this.isShowPass.set(!this.isShowPass());
   }
 }

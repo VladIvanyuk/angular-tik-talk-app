@@ -21,8 +21,8 @@
 }
 
 .form-field {
+  position: relative;
   display: grid;
-  grid-template-columns: 2 1fr;
   margin-bottom: 16px;
 }
 
@@ -57,4 +57,19 @@
 .submit-btn {
   width: 100%;
   cursor: pointer;
+}
+
+.form-field__show-pass-btn {
+  position: absolute;
+  right: 12px;
+  top: 36px;
+  cursor: pointer;
+}
+
+.form-field__show-pass-btn:hover path {
+  fill: var(--primary-color);
+}
+
+.active {
+  fill: var(--primary-color);
 }
