@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { ILogin } from './types';
+import { IAuthResponse, ILogin } from './types';
 import { tap } from 'rxjs';
 
 @Injectable({
@@ -27,13 +27,13 @@ export class AuthService {
 
     FD.append('username', payload.username as string);
     FD.append('password', payload.password as string);
-    return this.http.post(`${this.baseApiUrl}/token`, FD).pipe(
-      tap((val: any) => {
+    return this.http.post<IAuthResponse>(`${this.baseApiUrl}/token`, FD).pipe(
+      tap((val) => {
         this.token = val.access_token;
         this.refreshToken = val.refresh_token;
 
-        this.cookie.set('token', val.access_token);
-        this.cookie.set('refresh_token', val.refresh_token);
+        this.cookie.set('token', this.token);
+        this.cookie.set('refresh_token', this.refreshToken);
       }),
     );
   }
