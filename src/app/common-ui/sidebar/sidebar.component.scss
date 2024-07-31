@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+}
+
+.sidebar-logo {
+  width: min-content;
+  padding-left: 16px;
+}
+
+.nav-list-icon {
+  width: 16px;
+  height: 16px;
+  color: red;
+}
+
+.sidebar-nav-list__item {
+  padding: 8px 16px;
+
+  &:hover {
+    color: var(--primary-color);
+    background: var(--dark-hover-color);
+  }
+
+  &:hover {
+    .nav-list__button {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.subscribers-block {
+  padding: 0 16px;
+}
+
+.subscribers-block__title {
+  margin-bottom: 20px;
+}
+
+.nav-list__button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  color: var(--light-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+}
