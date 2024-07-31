@@ -12,7 +12,6 @@
 .nav-list-icon {
   width: 16px;
   height: 16px;
-  color: red;
 }
 
 .sidebar-nav-list__item {
@@ -24,7 +23,8 @@
   }
 
   &:hover {
-    .nav-list__button {
+    .nav-list__button,
+    .nav-list-icon {
       color: var(--primary-color);
     }
   }
