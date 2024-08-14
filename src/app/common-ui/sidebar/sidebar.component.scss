@@ -32,8 +32,10 @@
 
 .subscribers-block {
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
 .subscribers-block__title {
   margin-bottom: 20px;
 }
@@ -50,4 +52,16 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 171%;
+}
+
+.avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

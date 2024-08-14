@@ -23,4 +23,16 @@
 </nav>
 <div class="subscribers-block">
   <h5 class="subscribers-block__title">Подписчики</h5>
+  @for(profile of subscribers$ | async; track profile.username ) {
+  <app-subscriber-card [profile]="profile"></app-subscriber-card>
+  }
+</div>
+<div class="avatar-wrapper">
+  @if(me(); as me) { @if(me.avatarUrl) {
+  <img class="avatar" [src]="me.avatarUrl | imgUrl" alt="" />
+  } @else {
+  <img class="avatar" src="/assets/images/avatar.png" alt="" />
+  }
+  <p>{{ me.username }}</p>
+  }
 </div>
