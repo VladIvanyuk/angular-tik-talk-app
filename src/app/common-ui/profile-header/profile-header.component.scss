@@ -1,0 +1,41 @@
+.avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+}
+
+.avatar-wrapper {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px dotted var(--light-color);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-header__title {
+  margin-bottom: 16px;
+}
+
+.skill-list {
+  max-width: 400px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+}
+
+.skill-list li {
+  border: 1px solid var(--light-color);
+  padding: 5px;
+}
+
+.profile-info-box {
+  margin-bottom: 32px;
+}

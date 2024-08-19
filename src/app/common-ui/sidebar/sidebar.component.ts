@@ -6,6 +6,7 @@ import { IProfile } from '../../data/interfaces/profile.interface';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { firstValueFrom } from 'rxjs';
 import { ImgUrlPipe } from '../../helpers/pipes/img-url.pipe';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,6 +17,7 @@ import { ImgUrlPipe } from '../../helpers/pipes/img-url.pipe';
     AsyncPipe,
     JsonPipe,
     ImgUrlPipe,
+    RouterLink,
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',

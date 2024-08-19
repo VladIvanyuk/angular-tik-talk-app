@@ -2,22 +2,22 @@
 <nav>
   <ul class="sidebar-nav-list">
     <li class="sidebar-nav-list__item">
-      <button class="nav-list__button">
+      <a class="nav-list__button" [routerLink]="['/profile/me']">
         <svg class="nav-list-icon" icon="home"></svg>
         <span>Моя страница</span>
-      </button>
+      </a>
     </li>
     <li class="sidebar-nav-list__item">
-      <button class="nav-list__button">
+      <a class="nav-list__button">
         <svg class="nav-list-icon" icon="chat"></svg>
         <span> Чаты </span>
-      </button>
+      </a>
     </li>
     <li class="sidebar-nav-list__item">
-      <button class="nav-list__button">
+      <a class="nav-list__button">
         <svg class="nav-list-icon" icon="search"></svg>
         <span> Поиск </span>
-      </button>
+      </a>
     </li>
   </ul>
 </nav>

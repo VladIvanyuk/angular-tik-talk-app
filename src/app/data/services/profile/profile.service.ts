@@ -25,6 +25,10 @@ export class ProfileService {
       .pipe(tap((res) => this.me.set(res)));
   }
 
+  getUserProfile(id: number) {
+    return this.http.get<IProfile>(`${this.baseApiUrl}/account/${id}`);
+  }
+
   getSubscribers() {
     return this.http
       .get<IPageable<IProfile>>(`${this.baseApiUrl}/account/subscribers/`)

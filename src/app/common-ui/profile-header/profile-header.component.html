@@ -1,0 +1,25 @@
+@if(profile(); as profile) {
+<div class="avatar-wrapper">
+  @if(profile.avatarUrl) {
+  <img class="avatar" [src]="profile.avatarUrl | imgUrl" alt="" />
+  } @else {
+  <img class="avatar" src="/assets/images/avatar.png" alt="" />
+  }
+  <div class="profile-info">
+    <p>{{ profile.firstName }} {{ profile.lastName }}</p>
+    <p>{{ profile.username }}</p>
+  </div>
+</div>
+<div class="profile-info-box">
+  <h4 class="profile-header__title">Навыки</h4>
+  <ul class="skill-list">
+    <li *ngFor="let skill of profile.stack; track: skill">
+      {{ skill }}
+    </li>
+  </ul>
+</div>
+<div class="profile-info-box">
+  <h4 class="profile-header__title">О себе</h4>
+  <p>{{ profile.description }}</p>
+</div>
+}
